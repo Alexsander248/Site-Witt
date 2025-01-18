@@ -1,0 +1,136 @@
+/* Rodapé */
+
+/* Estilização do rodapé */
+.rodape {
+  position: relative;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilização dos ícones e do menu */
+.icones,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+/* Estilização dos ícones sociais e dos itens do menu */
+.social-icon__item,
+.item {
+  list-style: none;
+  color: #fff;
+}
+
+/* Estilização dos links dos ícones sociais */
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilização dos links do menu */
+.link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+/* Estilização dos parágrafos no rodapé */
+.rodape p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Estilização das ondas no rodapé */
+.onda {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../img/Barra-Rodape/wave.png");
+  background-size: 1000px 100px;
+}
+
+/* Estilização da primeira onda */
+.onda#onda1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 9s linear infinite;
+}
+
+/* Estilização da segunda onda */
+.onda#onda2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 7s linear infinite !important;
+}
+
+/* Estilização da terceira onda */
+.onda#onda3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 6s linear infinite;
+}
+
+/* Estilização da quarta onda */
+.onda#onda4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 5s linear infinite;
+}
+
+/* Animação das ondas */
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/* Animação das ondas */
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/* Fim Rodapé */
