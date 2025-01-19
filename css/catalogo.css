@@ -110,10 +110,16 @@ button:active {
   padding: 11px 40px;
   width: 100%;
   transition: all 0.5s;
-  position: inherit;
-  background-color: rgba(4, 0, 15, 0.5);
-  position: absolute;
+  position: fixed;
+  transition: all 0.5s ease; /* Adicionando a transição */
+  top: 0;
   z-index: 11;
+}
+
+/* Estilo ao rolar */
+.navigation.scrolled {
+  background-color: rgba(4, 0, 15, 0.9); /* Deixa o fundo mais opaco */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
 }
 
 .botao-play {
@@ -123,7 +129,7 @@ button:active {
 
 .navigation .logo {
   color: var(--azul);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
@@ -229,6 +235,34 @@ body {
 }
 
 /* Fim Primeira Parte */
+.carrossel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding: 1.4rem;
+  height: 16rem;
+  height: 31.5vh;
+}
+
+.carrossel img {
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+}
+
+.carrossel img:hover {
+  transform: scale(1.4); /* Aumenta o tamanho do elemento */
+  z-index: 10; /* Garante que o item fique acima dos vizinhos */
+  transition: transform 0.3s ease; /* Suaviza o efeito */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.877); /* Adiciona sombra ao redor */
+}
+
+.carrossel a {
+  width: 300px;
+  height: 200px;
+}
 
 .primeiroCarrossel {
   position: absolute;
@@ -245,13 +279,7 @@ body {
   font-weight: bold;
 }
 
-.carrossel img {
-  border-radius: 15px;
-  width: 300px;
-  height: 200px;
-}
-
-.carrossel {
+.carrossel2 {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -261,12 +289,12 @@ body {
   height: 16rem;
 }
 
-.carrossel a {
-  width: 300px;
-  height: 200px;
+.carrossel2 img:hover {
+  transform: scale(1.4); /* Aumenta o tamanho do elemento */
+  z-index: 10; /* Garante que o item fique acima dos vizinhos */
+  transition: transform 0.3s ease; /* Suaviza o efeito */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao redor */
 }
-
-/* ----------------------------------------------------------- */
 
 .segundoCarrossel {
   bottom: -110px;
@@ -283,78 +311,4 @@ body {
   font-weight: bold;
 }
 
-.carrossel img {
-  border-radius: 30px;
-  width: 300px;
-  height: 200px;
-}
-
-.carrossel {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  padding-left: 1.5rem;
-}
-
-.carrossel img:hover {
-  width: 350px;
-  height: 250px;
-  transition: ease-in;
-}
-
-.carrossel a {
-  width: 300px;
-  height: 200px;
-}
-
-.scale-up-center {
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-.scale-down-center {
-  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@keyframes scale-up-center {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.2);
-  }
-}
-
-@keyframes scale-down-center {
-  0% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-swiper-container {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  bottom: -80px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: yellowgreen;
-}
-
-swiper-slide {
-  text-align: center;
-  width: 50px;
-  font-size: 18px;
-  background: #e1e1e1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* ----------------------------------------------------------- */
