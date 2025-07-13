@@ -17,10 +17,13 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## Versões
 
 Versão para Desktop da pagina Index: <br>
-![wittmain](https://github.com/Alexsander248/Site-Witt/assets/123756518/39a658e9-520f-47f9-b6b4-6292ac3d6c0f)
+![Image](https://github.com/user-attachments/assets/a067bec1-57d3-40f8-8c97-b0f54b762bc0)
+
+Versão para Desktop da pagina Catalogos: <br>
+
 
 Versão para Mobile da pagina Index: <br>
-![wittmainmobile](https://github.com/Alexsander248/Site-Witt/assets/123756518/4c58c9fc-781b-4fc7-b3c3-5b42fa03c689)
+![Image](https://github.com/user-attachments/assets/44a41ce5-5d45-4158-97e2-db71de915b14)
 
 ## Páginas
 
