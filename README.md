@@ -20,7 +20,7 @@ Versão para Desktop da pagina Index: <br>
 ![Image](https://github.com/user-attachments/assets/a067bec1-57d3-40f8-8c97-b0f54b762bc0)
 
 Versão para Desktop da pagina Catalogos: <br>
-
+![Image](https://github.com/user-attachments/assets/4bbc975f-3717-4e37-8c1e-eaee56b2e120)
 
 Versão para Mobile da pagina Index: <br>
 ![Image](https://github.com/user-attachments/assets/44a41ce5-5d45-4158-97e2-db71de915b14)
